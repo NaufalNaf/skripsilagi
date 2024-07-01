@@ -14,7 +14,7 @@ gender = st.selectbox('Jenis kelamin', ('Female', 'Male'))
 gender_num = 0 if gender == 'Female' else 1
 
 # Prediksi
-input_data = np.array([[tinggi, berat badan, jenis kelamin]])
+input_data = np.array([[tinggi, berat badan, jenis kelamin_num]])
 prediction = model.predict(input_data)
 
 # Tampilkan hasil
