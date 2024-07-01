@@ -2,7 +2,9 @@ import streamlit as st
 import joblib
 import numpy as np
 
+st.write("Loading model...")
 clf = joblib.load('models/scaler.sav')
+st.write("Model loaded.")
 
 st.title('Klasifikasi Tingkat Obesitas')
 
