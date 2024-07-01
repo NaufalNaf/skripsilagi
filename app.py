@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 
-clf = joblib.load('/content/models/scaler.sav')
+clf = joblib.load('models/scaler.sav')
 
 st.title('Klasifikasi Tingkat Obesitas')
 
