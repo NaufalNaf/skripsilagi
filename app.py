@@ -16,7 +16,7 @@ gender_num = 0 if gender == 'Female' else 1
 
 # Prediksi
 input_data = np.array([[height, weight, gender_num]])
-prediction = model.predict(input_data)
+prediction = models.predict(input_data)
 
 # Tampilkan hasil
 obesity_level = ['Normal', 'Overweight', 'Obese']
