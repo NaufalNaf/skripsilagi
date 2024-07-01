@@ -25,7 +25,5 @@ if st.button('Predict'):
     st.write("Prediction made.")
 
 # Tampilkan hasil
- obesity_level = ['Normal', 'Overweight', 'Obese']
-        st.write(f'The predicted obesity level is: {obesity_level[prediction[0]]}')
-    except Exception as e:
-        st.write(f'Error during prediction: {e}')
+obesity_level = ['Normal', 'Overweight', 'Obese']
+st.write(f'The predicted obesity level is: {obesity_level[prediction[0]]}')
