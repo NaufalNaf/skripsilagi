@@ -26,4 +26,4 @@ if st.button('Predict'):
 
 # Tampilkan hasil
 obesity_level = ['Normal', 'Overweight', 'Obese']
-st.write(f'The predicted obesity level is: {obesity_level[prediction[0]]}')
+st.write(f'The predicted obesity level is: {index[prediction[0]]}')
