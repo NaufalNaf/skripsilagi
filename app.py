@@ -21,7 +21,7 @@ gender_num = 0 if gender == 'Female' else 1
 if st.button('Predict'):
     st.write("Button clicked.")
     input_data = np.array([[height, weight, gender_num]])
-    predict = clf.predict(input_data)
+    prediction = clf.predict(input_data)
     st.write("Prediction made.")
 
 # Tampilkan hasil
