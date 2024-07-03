@@ -20,10 +20,21 @@ gender_num = 0 if gender == 'Female' else 1
 # Prediksi
 if st.button('Predict'):
     st.write("Button clicked.")
-    input_data = np.array([[height, weight, gender_num]])
-    prediction = clf.predict(input_data)
-    st.write("Prediction made.")
 
-# Tampilkan hasil
-obesity_level = ['Extremely Weak','weak','Normal', 'Overweight', 'Obese','Extremely Obese']
-st.write(f'The predicted obesity level is: {obesity_level[prediction[0]]}')
+    # Buat array input
+    input_data = np.array([[height, weight, age, gender_num]])
+
+    # Debug: Tampilkan data input
+    st.write(f'Input data: {input_data}')
+
+    try:
+        # Lakukan prediksi
+        prediction = model.predict(input_data)
+        # Debug: Tampilkan prediksi mentah
+        st.write(f'Raw prediction: {prediction}')
+        
+        # Tampilkan hasil prediksi
+        obesity_level = ['Extremely Weak','weak','Normal', 'Overweight', 'Obese','Extremely Obese']
+        st.write(f'The predicted obesity level is: {obesity_level[prediction[0]]}')
+    except Exception as e:
+        st.write(f'Error during prediction: {e}')
