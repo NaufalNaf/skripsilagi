@@ -22,7 +22,7 @@ if st.button('Predict'):
     st.write("Button clicked.")
 
     # Buat array input
-    input_data = np.array([[height, weight, age, gender_num]])
+    input_data = np.array([[height, weight, gender_num]])
 
     # Debug: Tampilkan data input
     st.write(f'Input data: {input_data}')
