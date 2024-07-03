@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
+from sklearn.preprocessing import StandardScaler
 
 st.write("Loading model...")
 clf = joblib.load('models/scaler.sav')
