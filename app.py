@@ -29,7 +29,7 @@ if st.button('Predict'):
 
     try:
         # Lakukan prediksi
-        prediction = model.predict(input_data)
+        prediction = clf.predict(input_data)
         # Debug: Tampilkan prediksi mentah
         st.write(f'Raw prediction: {prediction}')
         
