@@ -5,6 +5,7 @@ from sklearn.preprocessing import StandardScaler
 
 st.write("Loading model...")
 clf = joblib.load('models/scaler.sav')
+scaler = joblib.load('scaler.sav')
 st.write("Model loaded.")
 
 st.title('Klasifikasi Tingkat Obesitas')
